@@ -1,3 +1,5 @@
+import { forEach } from "lodash";
+
 let greeting: string = "Hello TypeScript!";
 
 type Person = {
@@ -81,3 +83,5 @@ console.log(po.x); // 100
 console.log(po.getXX()); // [Function: f]
 console.log(po.getXX()()); // undefined
 console.log(po.getXXX()()); // [Function: f]
+
+forEach(numArr, (n) => console.log(n));
